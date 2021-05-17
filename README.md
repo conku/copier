@@ -62,8 +62,8 @@ func (employee *Employee) Role(role string) {
 
 func main() {
 	var (
-		user      = User{Name: "Jinzhu", Age: 18, Role: "Admin", Salary: 200000}
-		users     = []User{{Name: "Jinzhu", Age: 18, Role: "Admin", Salary: 100000}, {Name: "jinzhu 2", Age: 30, Role: "Dev", Salary: 60000}}
+		user      = User{Name: "conku", Age: 18, Role: "Admin", Salary: 200000}
+		users     = []User{{Name: "conku", Age: 18, Role: "Admin", Salary: 100000}, {Name: "conku 2", Age: 30, Role: "Dev", Salary: 60000}}
 		employee  = Employee{Salary: 150000}
 		employees = []Employee{}
 	)
@@ -72,7 +72,7 @@ func main() {
 
 	fmt.Printf("%#v \n", employee)
 	// Employee{
-	//    Name: "Jinzhu",           // Copy from field
+	//    Name: "conku",           // Copy from field
 	//    Age: 18,                  // Copy from field
 	//    Salary:150000,            // Copying explicitly ignored
 	//    DoubleAge: 36,            // Copy from method
@@ -85,7 +85,7 @@ func main() {
 
 	fmt.Printf("%#v \n", employees)
 	// []Employee{
-	//   {Name: "Jinzhu", Age: 18, Salary:0, DoubleAge: 36, EmployeId: 0, SuperRole: "Super Admin"}
+	//   {Name: "conku", Age: 18, Salary:0, DoubleAge: 36, EmployeId: 0, SuperRole: "Super Admin"}
 	// }
 
 	// Copy slice to slice
@@ -94,8 +94,8 @@ func main() {
 
 	fmt.Printf("%#v \n", employees)
 	// []Employee{
-	//   {Name: "Jinzhu", Age: 18, Salary:0, DoubleAge: 36, EmployeId: 0, SuperRole: "Super Admin"},
-	//   {Name: "jinzhu 2", Age: 30, Salary:0, DoubleAge: 60, EmployeId: 0, SuperRole: "Super Dev"},
+	//   {Name: "conku", Age: 18, Salary:0, DoubleAge: 36, EmployeId: 0, SuperRole: "Super Admin"},
+	//   {Name: "conku 2", Age: 30, Salary:0, DoubleAge: 60, EmployeId: 0, SuperRole: "Super Dev"},
 	// }
 
  	// Copy map to map
@@ -120,11 +120,11 @@ You can help to make the project better, check out [http://gorm.io/contribute.ht
 
 # Author
 
-**jinzhu**
+**conku**
 
-- <http://github.com/jinzhu>
+- <http://github.com/conku>
 - <wosmvp@gmail.com>
-- <http://twitter.com/zhangjinzhu>
+- <http://twitter.com/zhangconku>
 
 ## License
 
